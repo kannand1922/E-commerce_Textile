@@ -1,0 +1,141 @@
+.dashboard-container {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .flex1 {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #1e90ff;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+
+    .title-container {
+      font-size: 24px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+
+      .pom-title {
+        color: #ffffff;
+      }
+
+      .timer-title {
+        color: #eb9c9c;
+        text-align: center;
+      }
+    }
+
+    .logout-icon {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .cart-nav {
+      cursor: pointer;
+      font-size: 16px;
+      padding: 8px 12px;
+      background-color: #1677aa;
+      color: white;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #1e90ff;
+      }
+    }
+  }
+
+  .product-list {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    h2 {
+      margin-bottom: 20px;
+      color: #1e90ff;
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+    }
+
+    .product-item {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+
+      h3 {
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: #000;
+      }
+
+      p {
+        margin: 5px 0;
+        font-size: 16px;
+        color: #555;
+      }
+
+      .product-image {
+        margin: 15px 0;
+        iframe {
+          border: 2px solid #333;
+          border-radius: 5px;
+          width: 250px;
+          height: 250px;
+        }
+      }
+
+      .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 10px;
+
+        .add-to-cart-button {
+          background-color: #1e90ff;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          font-weight: bold;
+          text-align: center;
+          display: inline-block;
+          outline: none;
+
+          &:hover {
+            background-color: #1677aa;
+          }
+        }
+      }
+    }
+  }
+}
